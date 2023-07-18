@@ -1,10 +1,19 @@
 import './App.css';
+import { Fragment } from 'react';
+import GradeList from './components/GradeList';
+import classes from './App.module.css'
 
-function App() {
+const App = () => {
+
   return (
-    <div className="App">
-      
-    </div>
+	<Fragment >
+		<main className={classes.wrapper}>
+    	<h1>Podaj maksymalną liczbę punktów</h1>
+    	<input type="number"></input>
+    	<button>Oblicz!</button>
+		<GradeList></GradeList>
+		</main>
+	</Fragment>
   );
 }
 
