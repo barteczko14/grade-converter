@@ -1,6 +1,11 @@
 import { Fragment } from 'react'
 import classes from './GradeList.module.css'
+import { useSelector} from "react-redux";
 const GradeList = (props) => {
+	const pointsRoundTwo = useSelector((state)=>state.points.gradeTwoRound)
+	const pointsRoundThree = useSelector((state)=>state.points.gradeThreeRound)
+	const pointsRoundFour = useSelector((state)=>state.points.gradeFourRound)
+	const pointsRoundFive = useSelector((state)=>state.points.gradeFiveRound)
 	return (
 		<Fragment>
 			<div className={classes.container}>
@@ -16,7 +21,7 @@ const GradeList = (props) => {
 						<path d='M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2Zm15 0a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2Z' />
 					</svg>
 				</div>
-				<div className={classes.numberContainer}>{props.gradeTwo}</div>
+				<div className={classes.numberContainer}>{pointsRoundTwo}</div>
 			</div>
 
 			<div className={classes.container}>
@@ -32,7 +37,7 @@ const GradeList = (props) => {
 						<path d='M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2Zm15 0a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2Z' />
 					</svg>
 				</div>
-				<div className={classes.numberContainer}>{props.gradeThree}</div>
+				<div className={classes.numberContainer}>{pointsRoundThree}</div>
 			</div>
 
 			<div className={classes.container}>
@@ -48,7 +53,7 @@ const GradeList = (props) => {
 						<path d='M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2Zm15 0a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2Z' />
 					</svg>
 				</div>
-				<div className={classes.numberContainer}>{props.gradeFour}</div>
+				<div className={classes.numberContainer}>{pointsRoundFour}</div>
 			</div>
 
 			<div className={classes.container}>
@@ -64,7 +69,7 @@ const GradeList = (props) => {
 						<path d='M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2Zm15 0a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2Z' />
 					</svg>
 				</div>
-				<div className={classes.numberContainer}>{props.gradeFive}</div>
+				<div className={classes.numberContainer}>{pointsRoundFive}</div>
 			</div>
 		</Fragment>
 	)
