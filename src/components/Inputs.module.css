@@ -1,0 +1,24 @@
+.inputPercent {
+    width: 50px;
+	padding: 8px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-size: 14px;
+	color: #333;
+    margin: 10px 10px;
+}
+
+.inputPercent::placeholder {
+	color: #999;
+}
+.inputsContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.inputTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

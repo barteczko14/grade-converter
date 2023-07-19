@@ -5,6 +5,10 @@ const initialPointsState ={
     gradeThree:'',
     gradeFour:'',
     gradeFive:'',
+    inputTwo:0.34,
+    inputThree:0.51,
+    inputFour:0.76,
+    inputFive:0.91,
     gradeTwoRound:'',
     gradeThreeRound:'',
     gradeFourRound:'',
@@ -17,10 +21,10 @@ const pointsSlice= createSlice({
     initialState:initialPointsState,
     reducers:{
         calculatePoints(state) {
-            state.gradeTwo=(0.34 * state.inputPoints).toFixed(2)
-            state.gradeThree=(0.51 * state.inputPoints).toFixed(2)
-            state.gradeFour=(0.76 * state.inputPoints).toFixed(2)
-            state.gradeFive=(0.91 * state.inputPoints).toFixed(2)
+            state.gradeTwo=(state.inputTwo * state.inputPoints).toFixed(2)
+            state.gradeThree=(state.inputThree * state.inputPoints).toFixed(2)
+            state.gradeFour=(state.inputFour * state.inputPoints).toFixed(2)
+            state.gradeFive=(state.inputFive * state.inputPoints).toFixed(2)
             state.gradeTwoRound=Math.ceil(state.gradeTwo * 2)/2
             state.gradeThreeRound=Math.ceil(state.gradeThree * 2)/2
             state.gradeFourRound=Math.ceil(state.gradeFour * 2)/2
@@ -28,6 +32,18 @@ const pointsSlice= createSlice({
         },
         setPoints(state,action) {
             state.inputPoints = action.payload
+        },
+        setInputTwo(state,action) {
+            state.inputTwo=action.payload
+        },
+        setInputThree(state,action) {
+            state.inputThree=action.payload
+        },
+        setInputFour(state,action) {
+            state.inputFour=action.payload
+        },
+        setInputFive(state,action) {
+            state.inputFive=action.payload
         }
     }
 })

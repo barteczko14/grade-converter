@@ -2,8 +2,9 @@ import "./App.css";
 import { Fragment } from "react";
 import GradeList from "./components/GradeList";
 import classes from "./App.module.css";
-import { useSelector, useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 import { pointsActions } from "./store/points";
+import Inputs from "./components/Inputs";
 const App = () => {
   const dispatch = useDispatch();
 
@@ -15,6 +16,7 @@ const App = () => {
   return (
     <Fragment>
       <main className={classes.wrapper}>
+        <Inputs></Inputs>
         <h1 className={classes.title}>Podaj maksymalną liczbę punktów</h1>
         <input
           onChange={setPointsHandler}
