@@ -1,59 +1,18 @@
-.gradeContainer {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding: 20px;
-}
-.gradeIcon {
-	color: #fff;
-}
-.points {
-	color: #fff;
-	font-size: 36px;
-	margin-left: 10px;
-}
 .container {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	width: 200px;
 	margin: 10px auto;
-	padding: 10px;
-	background-color: #fff;
-	border: 1px solid #ccc;
+	padding: 5px;
+	background-color: #009b9b;
+	border: 1px solid #009b9b;
 	border-radius: 5px;
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.iconContainer {
-	width: 36px;
-	height: 36px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	border-radius: 50%;
-}
-
 .numberContainer {
-	font-size: 30px;
-	color: #333;
-}
-.icon2 {
-	background-color: #ed2626;
-	color: #fff;
+	font-size: 28px;
+	color: #9b0075;
 }
 
-.icon3 {
-	background-color: #f87b0d;
-	color: #fff;
-}
-
-.icon4 {
-	background-color: #0a45f4;
-	color: #fff;
-}
-
-.icon5 {
-	background-color: #0ca325;
-	color: #fff;
-}

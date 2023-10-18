@@ -1,7 +1,8 @@
 body {
 	margin: 0;
 	font-family: Arial, sans-serif;
-	background-color: #f2f2f2;
+  background-color: #00DBDE;
+  background-image: linear-gradient(45deg, #00DBDE 0%, #de00a7 100%);
   margin: 0;
   display: flex;
   flex-direction: column;
